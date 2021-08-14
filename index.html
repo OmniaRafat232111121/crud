@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body> 
+
+
+<div class="container py-5">
+       <h1 class="text-primary text-center my-4">Products List</h1>
+      <div class="form-inputs mb-3">
+        <div class="form-group">
+           <label>Product Name</label>
+           <input id="name" class="form-control">
+           <div id="nameAlert" class="d-none alert alert-danger mt-3">name should be start with capital letter followed by 3,7 small letters</div>
+        </div>
+        <div class="form-group">
+          <label>Product Category</label>
+          <input id="category" class="form-control">
+          <div id="nameAlert" class="d-none alert alert-danger mt-3">name should be start with capital letter followed by 3,7 small letters</div>
+       </div>
+       <div class="form-group">
+        <label>Product Price</label>
+        <input id="price" class="form-control">
+       </div>
+       <div class="form-group">
+        <label>Product Desc</label>
+        <textarea id="desc" class="form-control"></textarea>
+       </div>
+       
+       <button  id="addBtn" class="btn btn-primary float-right">Add product</button>
+       <div class="clearfix"></div>
+      </div>
+     
+      <input onkeyup="search(this.value)" placeholder="search by name ..." class="form-control"> 
+      <table class="table table-striped my-5">
+        <thead>
+          <th>name</th>
+          <th>category</th>
+          <th>price</th>
+          <th>description</th>
+          <th></th>
+          <th></th>
+
+        </thead>
+        <tbody id="tableBody">
+
+        </tbody>
+      </table>
+    </div>
+
+
+      <script src="js/jquery-3.5.1.slim.min.js"></script>
+      <script src="js/popper.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/main.js"></script>
+    </body>
+</html>
